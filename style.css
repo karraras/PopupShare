@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: grid;
+  place-items: center;
+  background-color: rgb(114, 49, 114);
+  height: 100vh;
+}
+.parent {
+  height: 325px;
+  background: rgb(255, 255, 255);
+  width: 525px;
+  border-radius: 10px;
+  padding: 30px 20px;
+  display: none;
+}
+.parent.show {
+  display: block;
+  transform: scale(0.9);
+  animation: animate 0.5s forwards;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(1);
+  }
+}
+
+.view {
+  background: white;
+  color: #723172;
+  border-radius: 3px;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+.parent .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0px 0px 10px 0px;
+}
+.parent .header i {
+  background: gray;
+  color: #eeeeee;
+  border-radius: 50%;
+  font-size: 25px;
+  cursor: pointer;
+}
+.parent .share {
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.parent .share .social {
+  display: flex;
+  justify-content: space-between;
+}
+.parent .share .social i {
+  border: solid 1px;
+  padding: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.parent .share .social .fa-facebook-f {
+  border-color: blue;
+  color: blue;
+}
+.parent .share .social .fa-facebook-f:hover {
+  border-color: blue;
+  background-color: blue;
+  color: rgb(255, 255, 255);
+}
+.parent .share .social .fa-twitter {
+  border-color: #26c6da;
+  color: #26c6da;
+}
+.parent .share .social .fa-twitter:hover {
+  border-color: #26c6da;
+  background-color: #26c6da;
+  color: white;
+}
+.parent .share .social .fa-instagram {
+  border-color: #ff5722;
+  color: #ff5722;
+}
+.parent .share .social .fa-instagram:hover {
+  border-color: #ff5722;
+  background-color: #ff5722;
+  color: white;
+}
+.parent .share .social .fa-whatsapp {
+  border-color: #06c806;
+  color: #06c806;
+}
+.parent .share .social .fa-whatsapp:hover {
+  border-color: #06c806;
+  background-color: #06c806;
+  color: white;
+}
+.parent .share .social .fa-telegram {
+  border-color: #2196f3;
+  color: #2196f3;
+}
+.parent .share .social .fa-telegram:hover {
+  border-color: #2196f3;
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.parent .input {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px 5px 10px;
+  border-radius: 5px;
+  border: solid 1px #e0e0e0;
+}
+.parent .input input {
+  padding: 8px;
+  width: 250px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.parent .input i {
+  font-weight: 600;
+}
+.parent .input button {
+  background: #723172;
+  color: white;
+  padding: 5px 20px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
